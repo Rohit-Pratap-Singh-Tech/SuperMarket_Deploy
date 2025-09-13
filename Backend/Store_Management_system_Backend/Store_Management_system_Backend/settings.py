@@ -107,10 +107,13 @@ MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017/Store_Management_S
 try:
     mongoengine.connect(
         db="Store_Management_System",
-        host=MONGO_URI
+        host=MONGO_URI,
+        serverSelectionTimeoutMS=5000  # 5 second timeout
     )
+    print("MongoDB connected successfully")
 except Exception as e:
     print(f"MongoDB connection error: {e}")
+    print("Continuing without MongoDB connection...")
     # For development, you might want to continue without MongoDB
     pass
 
