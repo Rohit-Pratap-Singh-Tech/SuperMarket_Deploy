@@ -32,7 +32,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 if not DEBUG:
-    ALLOWED_HOSTS.extend(['*.onrender.com', '*.vercel.app'])
+    ALLOWED_HOSTS.extend(['*.onrender.com', '*.vercel.app', 'store-management-backend-ec4z.onrender.com'])
 
 
 # Application definition
@@ -163,8 +163,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # Temporarily disabled JWT authentication for deployment
+        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
 }
 
 
