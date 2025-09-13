@@ -1,0 +1,1 @@
+web: cd Store_Management_system_Backend && gunicorn Store_Management_system_Backend.wsgi:application --bind 0.0.0.0:$PORT

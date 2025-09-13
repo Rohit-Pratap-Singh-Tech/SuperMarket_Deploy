@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Store Management System Logo</title>
+  <desc id="desc">Minimal blue storefront mark with brand text and tagline in monochrome blues.</desc>
+
+  <!-- ====== Style (edit these to fine-tune colors/typography) ====== -->
+  <style>
+    :root{
+      --blue-900:#1f3b64;   /* headline/navy */
+      --blue-700:#365d8b;   /* accent dark */
+      --blue-500:#6c8fb8;   /* icon mid */
+      --blue-300:#a8bed9;   /* icon light */
+      --blue-100:#eaf1f8;   /* subtle background */
+      --text-muted:#6e7f95; /* tagline */
+    }
+    .brand    { font-family: "Inter","Segoe UI","Helvetica","Arial",sans-serif; }
+    .h1       { font-weight: 800; letter-spacing: .2px; }
+    .accent   { fill: var(--blue-700); }
+    .primary  { fill: var(--blue-900); }
+    .muted    { fill: var(--text-muted); }
+    .cap      { letter-spacing: .24em; font-weight: 700; }
+  </style>
+
+  <!-- ====== Logo Mark: round storefront ====== -->
+  <g transform="translate(20,20)">
+    <!-- soft shadow -->
+    <ellipse cx="90" cy="190" rx="88" ry="14" fill="rgba(31,59,100,.08)"/>
+    <!-- ring -->
+    <circle cx="90" cy="110" r="90" fill="none" stroke="var(--blue-700)" stroke-width="10"/>
+    <!-- store base -->
+    <rect x="40" y="110" width="100" height="58" rx="6" fill="var(--blue-300)"/>
+    <!-- window -->
+    <rect x="52" y="126" width="38" height="32" rx="4" fill="white" stroke="var(--blue-500)" stroke-width="4"/>
+    <!-- door -->
+    <rect x="100" y="120" width="28" height="48" rx="4" fill="white" stroke="var(--blue-500)" stroke-width="4"/>
+    <!-- awning -->
+    <path d="M36 112h108v-18c0-6-5-11-11-11H47c-6 0-11 5-11 11v18z" fill="var(--blue-500)"/>
+    <path d="M36 112h108v8H36z" fill="var(--blue-700)"/>
+    <!-- awning scallops -->
+    <g fill="var(--blue-300)">
+      <circle cx="52" cy="120" r="8"/>
+      <circle cx="76" cy="120" r="8"/>
+      <circle cx="100" cy="120" r="8"/>
+      <circle cx="124" cy="120" r="8"/>
+      <circle cx="148" cy="120" r="8"/>
+    </g>
+    <!-- tiny plant for friendliness -->
+    <rect x="30" y="156" width="16" height="12" rx="3" fill="var(--blue-500)"/>
+    <path d="M38 156c-3-8 4-14 8-10 2 2 1 6-2 10h-6z" fill="var(--blue-300)"/>
+  </g>
+
+  <!-- ====== Wordmark ====== -->
+  <g class="brand" transform="translate(220,70)">
+    <!-- Headline -->
+    <text class="h1 primary" x="0" y="0" font-size="88">Store Management</text>
+    <text class="h1 accent"  x="0" y="102" font-size="88">System</text>
+
+    <!-- Tagline -->
+    <text class="muted cap" x="2" y="172" font-size="32">
+      INVENTORY • SALES • ANALYTICS
+    </text>
+  </g>
+</svg>

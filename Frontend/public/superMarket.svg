@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Premium Storefront Illustration</title>
+  <desc id="desc">A trustworthy, premium store illustration in sky blue tones with logo branding and modern styling.</desc>
+
+  <defs>
+    <linearGradient id="roofGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#0288D1"/>
+    </linearGradient>
+    <linearGradient id="awningGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81D4FA"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f9fc"/>
+    </linearGradient>
+    <linearGradient id="glassGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(173, 216, 230, 0.7)"/>
+      <stop offset="100%" stop-color="rgba(224, 247, 250, 0.3)"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.15)"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#E3F2FD"/>
+  <ellipse cx="450" cy="520" rx="340" ry="22" fill="rgba(0,0,0,0.05)"/>
+
+  <!-- Store Group -->
+  <g filter="url(#shadow)" transform="translate(150,100)">
+    <!-- Building -->
+    <rect x="0" y="100" width="600" height="280" rx="12" fill="url(#buildingGradient)" stroke="#c8dff0"/>
+
+    <!-- Roof -->
+    <rect x="-8" y="70" width="616" height="30" rx="12" fill="url(#roofGradient)"/>
+
+    <!-- Signage -->
+    <rect x="180" y="40" width="240" height="40" rx="8" fill="#0288D1" stroke="#01579B" stroke-width="2"/>
+    <text x="300" y="66" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">
+      Store Management
+    </text>
+
+    <!-- Awning -->
+    <g transform="translate(0,100)">
+      <rect width="600" height="80" fill="url(#awningGradient)"/>
+      <g fill="#ffffff" opacity="0.4">
+        <rect x="0" width="60" height="80"/>
+        <rect x="120" width="60" height="80"/>
+        <rect x="240" width="60" height="80"/>
+        <rect x="360" width="60" height="80"/>
+        <rect x="480" width="60" height="80"/>
+      </g>
+    </g>
+
+    <!-- Left Window -->
+    <g transform="translate(50,200)">
+      <rect width="300" height="160" rx="8" fill="url(#glassGradient)" stroke="#90CAF9"/>
+      <line x1="0" y1="30" x2="300" y2="30" stroke="white" stroke-opacity="0.5"/>
+      <line x1="0" y1="80" x2="300" y2="80" stroke="white" stroke-opacity="0.3"/>
+      <line x1="0" y1="130" x2="300" y2="130" stroke="white" stroke-opacity="0.3"/>
+    </g>
+
+    <!-- Door -->
+    <g transform="translate(390,200)">
+      <rect width="150" height="200" rx="10" fill="url(#glassGradient)" stroke="#90CAF9"/>
+      <path d="M30 150h90l10-70H40" fill="none" stroke="#0288D1" stroke-width="4"/>
+      <circle cx="55" cy="160" r="6" fill="#0288D1"/>
+      <circle cx="95" cy="160" r="6" fill="#0288D1"/>
+    </g>
+2
+    <!-- Shopping Bag Icon -->
+    <g transform="translate(560,300)">
+      <rect x="0" y="0" width="40" height="50" rx="4" fill="#81D4FA" stroke="#4FC3F7"/>
+      <path d="M5 15 Q20 0 35 15" fill="none" stroke="#0288D1" stroke-width="2"/>
+    </g>
+
+    <!-- Decorative Plant -->
+    <g transform="translate(-30,340)">
+      <ellipse cx="100" cy="20" rx="40" ry="10" fill="#bbdefb"/>
+      <path d="M100,20 C90,-20 130,-20 120,20" fill="#81C784"/>
+      <path d="M85,20 C75,-10 110,-15 100,20" fill="#81C784"/>
+    </g>
+  </g>
+</svg>
